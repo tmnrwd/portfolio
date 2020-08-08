@@ -2,182 +2,189 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tim Norwood, Programmer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tim Norwood, Programmer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $.get("navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Portfolio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Individual Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="six.html">The SIX wives quiz</a>
-                        <a class="dropdown-item" href="life.html">Conway's Game of Life</a>
-                        <a class="dropdown-item" href="social-site.html">HappyFun Social Data Site!</a>
-                        <a class="dropdown-item" href="calculator.html">Calculator</a>
-                        <a class="dropdown-item" href="caesar.html">The Caesar Cipher Page</a>
-                        <a class="dropdown-item" href="game.html">The Slightly Ominous Castle of Toska Sorann</a>
-                        <a class="dropdown-item" href="theatre.html">My Theatre Website</a>
-                        <a class="dropdown-item" href="bee.html">The Bee and Kitten Repository</a>
-                        <a class="dropdown-item" href="unix-page.html">GitHub and Unix Information Page</a>
-                    </div>
+ 
 
-                </li>
+  <div id="nav-placeholder"></div>
 
-            </ul>
-        </div>
-    </nav>
 
-    <div class="text-center">
-        <h1>TIM NORWOOD</h1>
-    <h2>Professional Portfolio</h2>
-    </div>
-    
-    <div class="text-center m-1"><p>Hello! I'm Tim Norwood, and I'm learning to code through a bootcamp with The Developer Academy. 
-      This portfolio contains the projects I've completed so far.</p></div>
-    
 
-    <div class="container-fluid">
+  <div class="text-center">
+    <h1>TIM NORWOOD</h1>
+    <h2>Student Portfolio</h2>
+  </div>
+
+  <div class="text-center m-1">
+    <p>Hello! I'm Tim Norwood, and I'm learning to code through a bootcamp with The Developer Academy.
+      This portfolio contains the projects I've completed so far.</p>
+  </div>
+
+
+  <div class="container-fluid">
     <h3>Projects</h3>
     <br>
     <h4>Highlights</h4>
-<br>
-    <div class="row">
-    
-        <div class="col-md-5 border borders rounded projects m-2">
-          <div class="thumbnail">
-            <a href="six.html">
-              <img src="six.jpg" class="thumbnails w-100 h-100 m-1" alt="Six young women in glamorous faux-Regency costumes pose on stage with microphones as Henry VIII's six wives, in the musical SIX.">
-              <div class="caption">
-                <p><h4>The SIX wives quiz</h4><br>An homage to old-school internet quizzes, where transparently obvious answers meet scrolling captions. Created with Javascript and styled with CSS.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-5 border borders rounded projects m-2">
-          <div class="thumbnail">
-            <a href="life.html">
-              <img  class="thumbnails w-100 h-100 m-1" src="life.jpg" alt="Conway's Game of Life: a grid of green, black, and white cells on a white background." >
-              <div class="caption">
-                <p><h4>Conway's Game of Life</h4><br>After creating the core function with test-driven development, I made this small implementation of the game using Object-Oriented Programming in Javascript.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-    </div>
-<br>
-        <h4>All Projects</h4>
-<br>
+    <br>
     <div class="row">
 
-        <div class="col-md-5 border borders rounded projects m-2">
-          <div class="thumbnail">
-            <a href="social-site.html">
-              <img src="social-site.jpg"  class="thumbnails w-100 h-100 m-1" alt="A social networking website, in an orange and black colour scheme." >
-              <div class="caption">
-                <p><h4>HappyFun Social Data Site!</h4><br>The front end of a social networking site, designed to answer the question: what if these sites were clear about what they get out of the deal? Created using React and React Bootstrap.</p>
-              </div>
-            </a>
-          </div>
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="six.html">
+            <img src="six.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="Six young women in glamorous faux-Regency costumes pose on stage with microphones as Henry VIII's six wives, in the musical SIX.">
+            <div class="caption">
+              <p>
+              <h4>The SIX wives quiz</h4><br>An homage to old-school internet quizzes, where transparently obvious
+              answers meet scrolling captions. Created with Javascript and styled with CSS.</p>
+            </div>
+          </a>
         </div>
+      </div>
 
-        <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="calculator.jpg">
-                <img src="calculator.jpg"  class="thumbnails w-100 h-100 m-1" alt="A simple on-screen calculator, with blue buttons." >
-                <div class="caption">
-                  <p><h4>Calculator</h4><br>A simple calculator, created using React and React Bootstrap.</p>
-                </div>
-              </a>
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="life.html">
+            <img class="thumbnails w-100 h-100 m-1" src="life.jpg"
+              alt="Conway's Game of Life: a grid of green, black, and white cells on a white background.">
+            <div class="caption">
+              <p>
+              <h4>Conway's Game of Life</h4><br>After creating the core function with test-driven development, I made
+              this small implementation of the game using Object-Oriented Programming in Javascript.</p>
             </div>
-          </div>
-
-          <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="caesar.html">
-                <img src="caesar.jpg"  class="thumbnails w-100 h-100 m-1" alt="The Caesar Cypher page: a black-and-white web page, explaining the Caesar Cypher, with text boxes and buttons to use it." >
-                <div class="caption">
-                  <p><h4>The Caesar Cipher Page</h4><br>A page that encodes and decodes messages with the Caesar Cypher, created using Javascript and test-driven development.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="game.html">
-                <img src="game.jpg"  class="thumbnails w-100 h-100 m-1" alt="A black-and-white text game. The display is divided by several grey lines.">
-                <div class="caption">
-                  <p><h4>The Slightly Ominous Castle of Toska Sorann</h4><br>A forlorn text game about exploring a castle and meeting people's needs, created with object-oriented programming in Javascript.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="theatre.html">
-                <img src="theatre.jpg"  class="thumbnails w-100 h-100 m-1" alt="A webpage containing a photo of a man playing the ukulele, and a twitter feed, in a grey and white design." >
-                <div class="caption">
-                  <p><h4>My Theatre Website</h4><br>A simple portfolio website of my work in the theatre, created with HTML and CSS.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="bee.html">
-                <img src="bee.jpg"  class="thumbnails w-100 h-100 m-1" alt="Screenshot of a simple web page, containing a picture of a kitten and text." >
-                <div class="caption">
-                  <p><h4>The Bee and Kitten Repository</h4><br>A page with a deliberately DIY aesthetic, containing kittens, facts about bees, and quotes. Created with HTML and Flexbox.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-5 border borders rounded projects m-2">
-            <div class="thumbnail">
-              <a href="unix.html">
-                <img src="unix-page.jpg"  class="thumbnails w-100 h-100 m-1" alt="Screenshot of a simple web page about GitHub and Unix." >
-                <div class="caption">
-                  <p><h4>GitHub and Unix Information Page</h4><br>My first ever HTML project: a page about GitHub and Unix.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
+          </a>
+        </div>
       </div>
     </div>
+    <br>
+    <h4>All Projects</h4>
+    <br>
+    <div class="row">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="social-site.html">
+            <img src="social-site.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="A social networking website, in an orange and black colour scheme.">
+            <div class="caption">
+              <p>
+              <h4>HappyFun Social Data Site!</h4><br>The front end of a social networking site, designed to answer the
+              question: what if these sites were clear about what they get out of the deal? Created using React and
+              React Bootstrap.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="calculator.jpg">
+            <img src="calculator.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="A simple on-screen calculator, with blue buttons.">
+            <div class="caption">
+              <p>
+              <h4>Calculator</h4><br>A simple calculator, created using React and React Bootstrap.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="caesar.html">
+            <img src="caesar.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="The Caesar Cypher page: a black-and-white web page, explaining the Caesar Cypher, with text boxes and buttons to use it.">
+            <div class="caption">
+              <p>
+              <h4>The Caesar Cipher Page</h4><br>A page that encodes and decodes messages with the Caesar Cypher,
+              created using Javascript and test-driven development.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="game.html">
+            <img src="game.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="A black-and-white text game. The display is divided by several grey lines.">
+            <div class="caption">
+              <p>
+              <h4>The Slightly Ominous Castle of Toska Sorann</h4><br>A forlorn text game about exploring a castle and
+              meeting people's needs, created with object-oriented programming in Javascript.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="theatre.html">
+            <img src="theatre.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="A webpage containing a photo of a man playing the ukulele, and a twitter feed, in a grey and white design.">
+            <div class="caption">
+              <p>
+              <h4>My Theatre Website</h4><br>A simple portfolio website of my work in the theatre, created with HTML and
+              CSS.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="bee.html">
+            <img src="bee.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="Screenshot of a simple web page, containing a picture of a kitten and text.">
+            <div class="caption">
+              <p>
+              <h4>The Bee and Kitten Repository</h4><br>A page with a deliberately DIY aesthetic, containing kittens,
+              facts about bees, and quotes. Created with HTML and Flexbox.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 border borders rounded projects m-2">
+        <div class="thumbnail">
+          <a href="unix.html">
+            <img src="unix-page.jpg" class="thumbnails w-100 h-100 m-1"
+              alt="Screenshot of a simple web page about GitHub and Unix.">
+            <div class="caption">
+              <p>
+              <h4>GitHub and Unix Information Page</h4><br>My first ever HTML project: a page about GitHub and Unix.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
