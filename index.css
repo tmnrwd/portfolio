@@ -1,3 +1,5 @@
+@font-face { font-family: "midnight"; src: url('midnight_5/MidNight.otf'); } 
+
 body{
     background-color: thistle;
     }
@@ -11,6 +13,10 @@ a:link, a:visited, a:hover, a:active {
 
 #nav-placeholder{
     height: 50px;
+}
+
+#index-heading{
+   font-family: midnight;
 }
 
 .thumbnails{
@@ -30,4 +36,8 @@ a:link, a:visited, a:hover, a:active {
 
 .big-text{
     font-size: 150%;
+}
+
+.very-big-text{
+    font-size: 450%;
 }
