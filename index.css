@@ -11,7 +11,7 @@ a:link, a:visited, a:hover, a:active {
 
 .navbar-nav > li > .dropdown-menu { background-color: thistle;}
 
-#nav-placeholder{
+.nav-placeholder{
     height: 60px;
 }
 
