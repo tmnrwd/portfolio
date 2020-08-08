@@ -9,6 +9,9 @@ a:link, a:visited, a:hover, a:active {
 
 .navbar-nav > li > .dropdown-menu { background-color: thistle;}
 
+#nav-placeholder{
+    height: 200px;
+}
 
 .thumbnails{
     width: 750px;
