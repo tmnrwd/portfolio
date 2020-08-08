@@ -11,10 +11,6 @@ a:link, a:visited, a:hover, a:active {
 
 .navbar-nav > li > .dropdown-menu { background-color: thistle;}
 
-.nav-placeholder{
-    height: 80px;
-}
-
 #index-heading{
    font-family: midnight;
 }
