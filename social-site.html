@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tim Norwood, Programmer - HappyFun Social Data Site!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
@@ -13,7 +19,7 @@
 <body>
 
     <div id="nav-placeholder"></div>
-    
+
     <div class="container-fluid">
         <h1>HappyFun Social Data Site!</h1>
         <p>HappyFun Social Data Site! is the front end of a social networking site, designed to answer the question: what if these sites were clear about what they get out of the deal? Created using React and React Bootstrap.</p>
