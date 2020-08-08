@@ -1,13 +1,13 @@
 body{
-    background-color: rgb(208, 208, 208);
+    background-color: thistle;
     }
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: white;
+    color: black;
   }
 
-.navbar-nav > li > .dropdown-menu { background-color: grey; }
+.navbar-nav > li > .dropdown-menu { background-color: thistle;}
 
 
 .thumbnails{
