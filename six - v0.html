@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tim Norwood, Programmer - The SIX Wives Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+
+      <div class="container-fluid">
+    <h1>The SIX Wives Quiz</h1>
+    <p>The SIX Wives Quiz is an internet quiz that pays homage to early examples of the genre, with its excessive enthusiasm for the subject, answers that transparently point to particular results, and retro scrolling text.</p>
+    <div>
+    <img src="six.jpg" class="resize" alt="Six young women in glamorous faux-Regency costumes pose on stage with microphones as Henry VIII's six wives, in the musical SIX.">
+    </div>
+    <br>
+    <p>
+        My new challenges in creating the SIX Wives Quiz were:
+        <ul>
+            <li>1. Using a single page for the entire quiz, and changing the visibility of different elements to create a user experience that feels like there are many pages.</li>
+        <li>2. Creating and implementing a scoring system for the quiz.</li>
+        </ul>
+        
+        <br>
+        To use a single page, I placed the different questions and answers into different div elements in the same HTML file.
+        Using Javascript, I created one function for each question, to change the visibilities of that question and the next.
+        Each of the answers the user selects calls the appropriate function, which will hide the current question and display the next (or, for the final question, display the answer).
+        <br><br>
+        To create a scoring system, I thought about how quizzes work (which does sound very basic, but it did help.) <br>
+        In my quiz, there are six wives, and six answers to each question, with each answer corresponding to one wife.<br>
+        The simple approach seemed the best: add up how many of each wife's answers the user chooses, and then assign them the wife whose answers they chose the most.<br>
+        This only falls down if there's no single wife they choose the most. What about if they choose half Anne Boleyn and half Jane Seymour?<br>
+        I decided to embrace the reputation of internet quizzes as being unreliable and unrelated to reality, and randomly determine the answer in these cases.<br>
+        With one exception, if the user doesn't choose a majority of any wife's answers, the function that determins answers generates a random number and uses it to assign an answer.<br>
+        And that one exception? I'm a fan of easter eggs in this kind of thing, so if the user has a single point for every wife, they're assigned the secret seventh wife of Henry VIII, Mary Catherine, who was a hidden envoy from Ireland. Sadly, Mary Catherine never existed - except in our hearts.
+    </p>
+<div class="big-text">
+                 <a href="https://tmnrwd.github.io/quiz-six/" target="_blank">Take the SIX Wives Quiz</a>
+         <br>
+         <a href="https://github.com/tmnrwd/quiz-six" target="_blank">View the SIX Wives Quiz GitHub repository</a>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tim Norwood, Programmer - The Caesar Cipher Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Individual Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="six.html">The SIX wives quiz</a>
+                        <a class="dropdown-item" href="life.html">Conway's Game of Life</a>
+                        <a class="dropdown-item" href="social-site.html">HappyFun Social Data Site!</a>
+                        <a class="dropdown-item" href="calculator.html">Calculator</a>
+                        <a class="dropdown-item" href="caesar.html">The Caesar Cipher Page</a>
+                        <a class="dropdown-item" href="game.html">The Slightly Ominous Castle of Toska Sorann</a>
+                        <a class="dropdown-item" href="theatre.html">My Theatre Website</a>
+                        <a class="dropdown-item" href="bee.html">The Bee and Kitten Repository</a>
+                        <a class="dropdown-item" href="unix-page.html">GitHub and Unix Information Page</a>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1>The Caesar Cipher Page</h1>
+        <p>A page that encodes and decodes messages with the Caesar Cipher, created using Javascript and test-driven development.</p>
+        <div>
+            <img src="caesar.jpg" class="resize rounded mx-auto d-block"
+                alt="The Caesar Cipher page: a black-and-white web page, explaining the Caesar Cipher, with text boxes and buttons to use it.">
+        </div>
+        <br>
+        <p>
+            My new challenge in creating the Caesar Cipher Page was:
+        <ol>
+            <!-- <li>Getting the choice of direction to work.</li> -->
+            <li>Avoiding entries that how up as "not a number".</li>
+            </ol>
+
+        <br>
+    <!--
+        On the choice of direction:
+        <ul>
+        <li>
+            The user has to be able to choose whether they want to shift the letters in their message to the left or right (the shift direction), and by how much (the shift number). My basic approach was to convert the letters to the corresponding number in the alphabet (A = 1, B = 2, and so on), change the numbers by the specified amount (adding 3 to each number if the user chooses a shift to the right of 3), and then converting numbers back to letters.
+        </li>
+        <li>
+            The issue was that the user choosing a left shift still resulted in addition of the numbers in the second step (a right shift).
+        </li>
+        <li>
+            
+        </li>
+        <br>
+    -->
+        On avoiding "not a number":
+        <li>
+            This occured when the adding/subtracting of the shift number in order to encode/decode the message resulted in a number below 1 or above 26. That's because the step I was using to convert back from numbers to letters used an array of number-letter pairs from 1 to 26, as in the alphabet.
+        </li>
+        <li>
+            The solution was easy enough: add 26 to numbers below 1, and subtract 26 from numbers above 26. This results in the code wrapping around when it reaches the start of end of the alphabet.
+        </li>
+        <li>"Not a number" also occured with spaces in the message. I added an else statement to the function to replace any remaining NaN results with a space.</li>
+        
+    
+        </p>
+
+        <div class="big-text">
+            <a href="https://tmnrwd.github.io/caesar-cipher/" target="_blank">Visit the Caesar Cipher Page</a>
+            <br>
+            <a href="https://github.com/tmnrwd/caesar-cipher" target="_blank">View the Caesar Cipher Page GitHub repository</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
