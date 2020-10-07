@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tim Norwood, Programmer - The Blog Pile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="nav-placeholder" class="nav-placeholder"></div>
+
+    <div class="container-fluid">
+        <h1>The Blog Pile</h1>
+        <p>The Blog Pile is a blogging app, created using React, linked to an API created using Express, and a Mongo database.</p>
+        <div>
+            <img src="blogpile.jpg" class="resize rounded mx-auto d-block"
+                alt="A blogging app, titled The Blog Pile, with a pink-and-black colour scheme. The post reads: Dear Diary; Date: 9/30/2020; I had a dream about a weasel with a french birad! omg!!; Tags: dream weasel hair. There are buttons, labelled Edit - make changes in editing form below; Delete.">
+        </div>
+        <br>
+        <p>
+            My new challenges in creating The Blog Pile were:
+        <ol>
+            <li>Refining the design from my previous full-stack app. For example, I added an Edit button to entries so that the user doesn't have to copy-paste a post ID into the edit form.</li>
+        </ol>
+
+        <div class="big-text">
+            <a href="https://tmnrwd.github.io/blogging-app/" target="_blank">Visit The Blog Pile. The username is bob, and the password is turnip.</a>
+            <br>
+            <a href="https://github.com/tmnrwd/blogging-app/" target="_blank">View the The Blog Pile GitHub repository</a>
+            <br>
+            <a href="https://github.com/tmnrwd/blogging-app-api/" target="_blank">View the The Blog Pile API GitHub repository</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

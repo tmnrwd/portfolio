@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tim Norwood, Programmer - The Event List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="nav-placeholder" class="nav-placeholder"></div>
+
+    <div class="container-fluid">
+        <h1>The Event List</h1>
+        <p>The Event List is an event listing app, created using React, linked to an API created using Express, and a Mongo database.</p>
+        <div>
+            <img src="event-list.jpg" class="resize rounded mx-auto d-block"
+                alt="An event listing app. The list of events is one entry long. The entry reads: Name: Complain about the weather; Location: UK; Precis: Let's have a cup of tea and complain about the weather. Below, there is a section labelled Add Event to List.">
+        </div>
+        <br>
+        <p>
+            My new challenges in creating The Event List were:
+        <ol>
+            <li>Linking an API to a database. I spent a long time trying to get the authentication to work in Insomnia before realising that I'd forgotten to specify the request having a JSON body. This was only a small thing to forget, but it shows that there's always more to learn.</li>
+        </ol>
+
+        <div class="big-text">
+            <a href="https://tmnrwd.github.io/event-list/" target="_blank">Visit The Event List. The username is bob, and the password is turnip.</a>
+            <br>
+            <a href="https://github.com/tmnrwd/event-list/" target="_blank">View the The Event List GitHub repository</a>
+            <br>
+            <a href="https://github.com/tmnrwd/event-list-api/" target="_blank">View the The Event List API GitHub repository</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

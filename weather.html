@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tim Norwood, Programmer - Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="nav-placeholder" class="nav-placeholder"></div>
+
+    <div class="container-fluid">
+        <h1>Forecasting the Weather</h1>
+        <p>Forecasting the Weather is a simple weather app, created using React. It draws its data from <a href="https://openweathermap.org/">OpenWeather</a>.</p>
+        <div>
+            <img src="weather.jpg" class="resize rounded mx-auto d-block"
+                alt="A simple weather forecasting app. Cards represent the forecast for different days; each card bears informaton and a weather icon.">
+        </div>
+        <br>
+        <p>
+            My new challenges in creating Forecasting the Weather were:
+        <ol>
+            <li>Learning how to use API requests and how to get what I want out of their responses.</li>
+            <li>The app's logic isn't very streamlined: it only has one component, which defines state, carries out the API request, does some processing on the response, and makes changes to state.
+                This meant that any changes had to be made to the different weather cards manually, rather than creating the cards from a single place.
+                I improved on my approach to this kind of app in later projects, using more components and linking them together to make edits easier.</li>
+            
+        </ol>
+
+        <div class="big-text">
+            <a href="https://tmnrwd.github.io/weather-app/" target="_blank">Visit Forecasting the Weather</a>
+            <br>
+            <a href="https://github.com/tmnrwd/weather-app" target="_blank">View the Forecasting the Weather GitHub repository</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
